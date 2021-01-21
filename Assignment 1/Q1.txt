@@ -1,0 +1,39 @@
+console.log(1 + "2" + "2");  
+122
+because number 1 and strings "2" and "2" gets printed together due to '+' operator
+
+
+
+console.log(1 + +"2" + "2");
+32
+because +"2" converts string to a number, so it converts to number 2.
+Thus the expression reduces to (1 + 2 + "2")
+=> (3 + "2") which gets printed just like above case
+
+
+
+console.log(1 + -"1" + "2");
+02
+in this case, -"1" converts to integer -1
+Thus reducing the expression to (1 + -1 + "2")
+=> (0 + "2") which gets printed just like above cases
+
+
+console.log(+"1" + "1" + "2");
+112
++"1" converts to number 1
+Reducing the expression to (1 + "1" + "2") which gets printed just like above cases
+
+
+
+console.log( "A" - "B" + "2");
+NaN2
+because if you are trying to use any operator except "+" on string then it will display "NaN"
+So "A"-"B" will be "NaN" and + "2" will produce "NaN2" as it will concatenate 
+
+
+
+console.log( "A" - "B" + 2);
+NaN
+"A" - "B" will display "NaN"
++ 2 will not display anything as 2 is a number and we can't perform operations on strings and numbers.
