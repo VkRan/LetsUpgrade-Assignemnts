@@ -1,0 +1,8 @@
+Q1 What is the value of clothes[0] and why
+
+const clothes = ['jacket', 't-shirt'];
+clothes.length = 0;
+console.log(clothes[0]);
+
+
+Output: UNDEFINED because when we set the array length to 0 all the elements in the array gets deleted
