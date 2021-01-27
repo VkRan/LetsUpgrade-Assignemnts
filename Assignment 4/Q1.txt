@@ -1,0 +1,12 @@
+Q1 By how many ways we can access elements in the DOM and write about them in brief?
+
+We can access elements in DOM using their tag name, id name and class name.
+
+Using Tags
+    - document.getElementsByTagName("tag_Name") 
+
+Using Class
+    - document.getElementsByClassName("class_Name") 
+
+Using Id    
+    - document.getElementById("id_Name") 
